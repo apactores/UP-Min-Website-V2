@@ -1,0 +1,17 @@
+/* Select Menu style */
+#acad-units .ui-widget { 
+    border:none;  
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: max-content;
+}
+
+#acad-units {
+    border: none;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+position: relative;
+padding: 3px 1em 3px .4em;
+}

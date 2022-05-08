@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+/*----- Content -----*/
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-material, .bottom-material {
+    height: 20px;
+    background-color: #7b1113;
+}
+
+.back-navigation {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+.back-navigation img {
+    width: 50px;
+}
+
+.back-navigation p {
+    font: bold 20px "Poppins", arial, sans-serif;
+    margin-left: 10px;
+    color: #014421ff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 480px;
+    padding: 20px;
+    border: 3px solid #014421ff;
+    border-radius: 10px;
+    border-top: 10px solid #014421ff;
+}
+
+fieldset {
+    border: none;
+    margin: 10px;
+}
+
+legend {
+    font: 600 18px "Poppins", arial, sans-serif;
+}
+
+label, input[type="text"], input[type="radio"], input[type="spinner"] {
+    font: 16px "Lato", arial, sans-serif !important;
+}
+
+input[type="text"], input[type="radio"], input[type="spinner"] {
+    padding: 8px;
+}
+
+input[type="text"], input[type="spinner"] {
+    width: 90%;
+}
+
+.gender-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Override original color of radio buttons */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #4e5b15 !important;
+    background: #014421ff !important;
+    color: #ffffff;
+}
+
+.submit-button, .year-level-input, .name-content input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"] {
+    width: 90px;
+    padding: 10px;
+    font: 400 16px "Poppins", arial, sans-serif;
+    background-color: #014421ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(18, 105, 60);
+    cursor: pointer;
+}

@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    min-height: 100%;
+}
+body {
+    height: 750px;
+    width: 100%;
+}
+header {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid #014421ff;
+}
+
+/*----- Header Styling -----*/
+.top-material, .bottom-material {/*----- Creates the Maroon Border -----*/
+    height: 20px;
+    background-color: #7b1113;
+}
+
+.up-logo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+.header-slogan p {
+    font: 700 18px "Poppins", arial, sans-serif;
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    color: #014421ff;
+}
+
+.up-logo img {
+    width: 80px;
+}
+
+.up-logo p, header a {
+    font: 500 18px "Poppins", arial, sans-serif;
+    margin-left: 10px;
+    color: #014421ff;
+    text-decoration: none;
+}
+.content {
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+/* ----- Menu Styling ----- */
+.menu-tab {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-tab {
+    width: 100%;
+}
+.menu-container {
+    width: 250px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+.menu a {
+    text-decoration: none;
+}
+.ui-menu-item .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover, #acad-units:hover, #acad-units .ui-widget-content:hover, #acad-units .ui-widget-header:hover, #acad-units .ui-widget:hover {
+	background: #f5ab29ff !important;
+	font-weight: normal;
+	color: #fff;
+}
+
+.ui-menu-item .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid rgb(171, 117, 23) !important;
+}
+
+/* ---- Styling for the Academic Programs content ---- */
+h1{
+    text-align: center;
+    border-bottom: 5px dotted #014421ff;
+    border-width: 6px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin-left: 25%;
+    color: #7b1113ff;
+}
+.first-accordion{
+    margin-top: 10%;
+}
+.ui-accordion{
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.ui-widget-content{
+    border: 1px solid #014421ff !important;
+}
+.ui-accordion-header{
+    border: 2px solid #014421ff;
+    background: none;
+    color: #7b1113ff;
+}
+.ui-state-active{
+    background-color: #014421ff;
+    color: white;
+}
+.academic-program-program-profile, 
+.academic-program-job-opportunities{
+    text-align: justify;
+}
+.ui-menu-item .ui-widget {
+    font: 400 16px "Poppins", Arial, Sans-serif !important;
+    text-align: justify;
+}
+
+/* Select Menu Styling */
+#acad-units .ui-widget { 
+    border:none;  
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: max-content;
+}
+
+#acad-units .ui-widget-header { 
+    border:none; 
+    display:none; 
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: max-content;
+}
+
+#acad-units .ui-widget-content { 
+    border:none; 
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#acad-units {
+    border: none;
+}
+#acad-units .ui-widget { 
+    border:none;  
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: max-content;
+}
+#acad-units-dropdown {
+    border: none;
+}
+#acad-units {
+    border: none;
+}
+.ui-menu .ui-menu-item-wrapper {
+    position: relative;
+    padding: 3px 1em 3px .4em;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP Min | Sign Up</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="../../libraries/jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../libraries/jqueryui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../../libraries/jqueryui/jquery-ui.theme.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-material"></div>
+    <div class="content">
+        <a href="../../home/index.html" class="home">
+            <div class="back-navigation">
+                <img src="../../photos/back-arrow.png" alt="back-arrow">
+                <p>Home</p>
+            </div>
+        </a>
+        <form>
+            <fieldset>
+                <legend>NAME</legend>
+                <div class="name-content">
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" name="first-name" id="first-name"><br>
+                    <label for="last-name">Last Name:</label><br>  
+                    <input type="text" name="last-name" id="last-name"><br>
+                    <label for="middle-name">Middle Name:</label><br>
+                    <input type="text" name="middle-name" id="middle-name"><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>GENDER</legend>
+                <div class="gender-container">
+                    <label for="gender-1">Male</label>
+                    <input type="radio" name="gender-1" id="gender-1" value="Male">
+                    <label for="gender-2">Female</label>
+                    <input type="radio" name="gender-1" id="gender-2" value="Female">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>DATE OF BIRTH</legend>
+                <input type="text" name="date-of-birth" id="date-of-birth">
+            </fieldset>
+            <fieldset>
+                <legend>PROVINCE</legend>
+                <input type="text" name="province" id="province">
+            </fieldset>
+            <fieldset>
+                <legend>Year-Level</legend>
+                <div class="year-level-input">
+                    <input type="spinner" name="year-level" id="year-level">
+                </div>
+            </fieldset>
+            <div class="submit-button">
+                <input type="submit" value="SIGN UP">
+            </div>
+        </form>
+    </div>
+    <div class="bottom-material"></div>
+
+    <script type="text/javascript" src="../../libraries/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../libraries/jqueryui/jquery-ui.min.js"></script>
+    <script src="signupscript.js"></script>
+</body>
+</html>
