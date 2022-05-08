@@ -9,14 +9,6 @@ html {
 }
 
 /*----- Content -----*/
-body {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .top-material, .bottom-material {
     height: 20px;
     background-color: #7b1113;
@@ -33,14 +25,22 @@ body {
 }
 
 .back-navigation img {
-    width: 50px;
+    width: 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .back-navigation p {
     font: bold 20px "Poppins", arial, sans-serif;
     margin-left: 10px;
+    margin-bottom: 0;
     color: #014421ff;
 }
+
+.content a:hover img {
+    opacity: 1;
+    width: 30px;
+}
+
 
 .content {
     display: flex;
@@ -84,13 +84,6 @@ input[type="text"], input[type="spinner"] {
     justify-content: center;
 }
 
-/* Override original color of radio buttons */
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: 1px solid #4e5b15 !important;
-    background: #014421ff !important;
-    color: #ffffff;
-}
-
 .submit-button, .year-level-input, .name-content input {
     width: 100%;
     display: flex;
@@ -99,17 +92,7 @@ input[type="text"], input[type="spinner"] {
     align-items: center;
 }
 
-input[type="submit"] {
-    width: 90px;
-    padding: 10px;
-    font: 400 16px "Poppins", arial, sans-serif;
+.btn-style, .btn-check {
     background-color: #014421ff;
-    color: white;
     border: none;
-    border-radius: 8px;
-}
-
-input[type="submit"]:hover {
-    background-color: rgb(18, 105, 60);
-    cursor: pointer;
 }

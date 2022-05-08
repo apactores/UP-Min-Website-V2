@@ -30,8 +30,6 @@ $(function(){   //loads jQuery when the webpage has finished loading
         "Zamboanga Sibugay",
     ];
 
-    $('input[type="radio"]').checkboxradio();     //jQuery UI radio
-
     $('#date-of-birth').datepicker();    //jQuery UI datepicker
     
     $('#province').autocomplete({
@@ -40,55 +38,72 @@ $(function(){   //loads jQuery when the webpage has finished loading
 
     $('#year-level').spinner();     //jQuery UI spinner
 
-    //operation to store the submitted information in a text file
-    $('input[type="submit"]').click(function(event){
-        event.preventDefault();     //prevents the page from refreshing when submit button is clicked
-        var toPrint = [];
-        var idNames = [
-            'first-name', 
-            'middle-name', 
-            'last-name', 
-            'gender', 
-            'date-of-birth',
-            'province',
-            'year-level'
-        ];
+    //operation to validate form
+    $('button[type="submit"]').click(// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
 
-        //stores the information inputted in the form to the array named toPrint
-        for (var i = 0; i < idNames.length; i++) {
-            if (idNames[i] == "gender") {
-                 toPrint.push($('input[type="radio"]:checked').val());
-            } else {
-                 toPrint.push($('#'+idNames[i]).val());
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {    //if there are fields without input, warn user to input all fields
+            event.preventDefault()
+            event.stopPropagation()
+            } else {        //when all fields have inputs, store the submitted information in a text file
+                event.preventDefault();     //prevents the page from refreshing when submit button is clicked
+                var toPrint = [];
+                var idNames = [
+                    'first-name', 
+                    'middle-name', 
+                    'last-name', 
+                    'gender', 
+                    'date-of-birth',
+                    'province',
+                    'year-level'
+                ];
+
+                //stores the information inputted in the form to the array named toPrint
+                for (var i = 0; i < idNames.length; i++) {
+                    if (idNames[i] == "gender") {
+                        toPrint.push($('input[name=options]:checked').val());
+                    } else {
+                        toPrint.push($('#'+idNames[i]).val());
+                    }
+                }
+
+                var infoCategories = [      //list of categories; used to organize stored information
+                    'First name: ',
+                    'Middle name: ',
+                    'Last name: ',
+                    'Gender: ',
+                    'Date of Birth: ',
+                    'Province: ',
+                    'Year level: '
+                ];
+
+                var information = "";
+
+                //concatenate stored information with its appropriate category to organize data
+                for (var i = 0; i < toPrint.length; i++) {
+                    information = information + infoCategories[i] + toPrint[i] + "\n";
+                }
+
+                //write the stored information in a downloadable .txt file 
+                var blob = new Blob([information], 
+                    {
+                        type:"application/json;utf - 8"
+                    });
+
+                var link = document.createElement('a');
+                link.setAttribute('download', "information.txt");
+                link.setAttribute('href', window.URL.createObjectURL(blob));
+                link.click();
             }
-        }
-
-        var infoCategories = [      //list of categories; used to organize stored information
-            'First name: ',
-            'Middle name: ',
-            'Last name: ',
-            'Gender: ',
-            'Date of Birth: ',
-            'Province: ',
-            'Year level: '
-        ];
-
-        var information = "";
-
-        //concatenate stored information with its appropriate category to organize data
-        for (var i = 0; i < toPrint.length; i++) {
-            information = information + infoCategories[i] + toPrint[i] + "\n";
-        }
-
-        //write the stored information in a downloadable .txt file 
-        var blob = new Blob([information], 
-            {
-                type:"application/json;utf - 8"
-            });
-
-        var link = document.createElement('a');
-        link.setAttribute('download', "information.txt");
-        link.setAttribute('href', window.URL.createObjectURL(blob));
-        link.click();
-      });
+            form.classList.add('was-validated')
+        }, false)
+        })
+    })());
 });
