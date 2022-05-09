@@ -4,25 +4,18 @@
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*----- Content -----*/
-body {
-    height: 750px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-header {
-    position: absolute;
-    top: 10px;
-    display: flex;
-    width: 100%;
-    border-bottom: 3px solid #014421ff;
+.bottom-material {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .top-material, .bottom-material {
@@ -60,29 +53,15 @@ header {
     text-decoration: none;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-}
-
 .menu-tab {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
 }
 
 /* ----- MENU ----- */
-.menu-tab {
-    width: 100%;
-}
 
 .menu-container {
-    width: 250px;
-    position: absolute;
-    top: 150px;
-    left: 10px;
+    display: inline-block;
 }
 
 .menu a {
@@ -90,13 +69,6 @@ header {
 }
 
 /*----- Tabs -----*/
-.tabbed-information {
-    width: 80%;
-    max-height: 800px;
-    position: absolute;
-    left: 130px;
-    top: 50px;
-}
 
 .ui-tabs-panel {
     overflow-y: auto;
