@@ -49,6 +49,11 @@ header {
     color: #014421ff;
     text-decoration: none;
 }
+.content {
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
 
 /* ----- Menu Styling ----- */
 .menu-tab {
@@ -81,6 +86,9 @@ header {
 /* ---- Styling for the SOM content ---- */
 h1{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
     border-bottom: 5px dotted #014421ff;
     border-width: 6px;
     padding-bottom: 10px;
@@ -89,13 +97,9 @@ h1{
     color: #7b1113ff;
 }
 .college-logo{
-    margin-left: 33%;
     margin-top: 10px;
     margin-bottom: 15px;
-    height: 250px;
-}
-.college-container{
-    margin-top: 10%;
+    height: 200px;
 }
 .content-container{
     margin-left: 25%;
@@ -105,4 +109,7 @@ h1{
     padding: 20px;
     width: 50%;
     border: 2px solid #014421ff;
+}
+.container-fluid{
+    padding: 0;
 }
