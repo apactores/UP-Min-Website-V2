@@ -12,10 +12,7 @@ $(function(){   //loads jQuery when the webpage has finished loading
     });
 
     //jQuery Tab Panels
-    $('#home-tabs').hide();  //hides tabbed information by default
-
-    //shows or hides the tabbed information when the home element is clicked
     $('#home-page').click(function(){
-        $('#home-tabs').toggle();    
+        $('#home-tabs').toggle();        //shows or hides the tabbed information when the home element is clicked
     });
 });
