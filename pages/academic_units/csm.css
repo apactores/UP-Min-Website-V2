@@ -5,13 +5,16 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+
 html {
     min-height: 100%;
 }
+
 body {
     height: 750px;
     width: 100%;
 }
+
 header {
     position: absolute;
     top: 10px;
@@ -21,7 +24,7 @@ header {
 }
 
 /*----- Header Styling -----*/
-.top-material, .bottom-material { /*----- Creates the Maroon Border -----*/
+.top-material, .bottom-material {/*----- Creates the Maroon Border -----*/
     height: 20px;
     background-color: #7b1113;
 }
@@ -29,40 +32,45 @@ header {
 .up-logo {
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 2vh 2vw;
     padding: 5px;
 }
-.header-slogan p {
-    font: 700 18px "Poppins", arial, sans-serif;
-    position: absolute;
-    top: 60px;
-    right: 80px;
-    color: #014421ff;
-}
-.up-logo img {
-    width: 80px;
-}
-.up-logo p, header a {
+
+.up-logo p{
+    margin: 0 2vw;
+    padding: 5px;
     font: 500 18px "Poppins", arial, sans-serif;
-    margin-left: 10px;
     color: #014421ff;
     text-decoration: none;
 }
-.content {
-    align-items: center;
-    justify-content: center;
-    height: 150px;
+
+.header-slogan p {
+    font: 700 18px "Poppins", arial, sans-serif;
+    text-align: right;
+    margin: 6vh 2vw;
+    padding: 5px;
+    color: #014421ff;
 }
+
+.up-logo img {
+    width: 80px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* ----- Menu Styling ----- */
 .menu-tab {
     display: flex;
     justify-content: space-around;
-}
-
-.menu-tab {
     width: 100%;
 }
+
+#text-black {
+    color: black;
+}
+
 .menu-container {
     width: 250px;
     position: absolute;
@@ -72,15 +80,10 @@ header {
 .menu a {
     text-decoration: none;
 }
+
 .ui-widget {
     font: 400 16px "Poppins", Arial, Sans-serif !important;
     text-align: justify;
-}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-	border: 1px solid rgb(171, 117, 23) !important;
-	background: #f5ab29ff !important;
-	font-weight: normal;
-	color: #fff;
 }
 
 /* ---- Styling for the CSM content ---- */
@@ -96,11 +99,13 @@ h1{
     margin-left: 25%;
     color: #7b1113ff;
 }
+
 .college-logo{
     margin-top: 10px;
     margin-bottom: 15px;
     height: 200px;
 }
+
 .content-container{
     margin-left: 25%;
     text-align: justify;
@@ -110,6 +115,31 @@ h1{
     width: 50%;
     border: 2px solid #014421ff;
 }
+
 .container-fluid{
     padding: 0;
 }
+
+@media only screen and (max-width: 800px) {
+    .header-slogan p {
+        text-align: center;
+    }
+    
+    .up-logo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .side-menu {
+        display: flex;
+        margin-left: 3vw;
+        margin-bottom: 0;   
+    }
+
+    .w-25 {
+        width: 100%!important;
+    }
+  }

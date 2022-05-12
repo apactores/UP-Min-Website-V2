@@ -58,12 +58,12 @@ img {
     width: 80px;
 }
 
+/* ----- MENU ----- */
+
 .menu-tab {
     display: inline-block;
     justify-content: space-around;
 }
-
-/* ----- MENU ----- */
 
 .menu-container {
     display: inline-block;
@@ -120,16 +120,6 @@ img {
 
 #acad-units {
     border: none;
-}
-
-.ui-menu-item .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover, #acad-units:hover, #acad-units .ui-widget-content:hover, #acad-units .ui-widget-header:hover, #acad-units .ui-widget:hover {
-	background: #f5ab29ff !important;
-	font-weight: normal;
-	color: #fff;
-}
-
-.ui-menu-item .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: 1px solid rgb(171, 117, 23) !important;
 }
 
 #contact-us {
