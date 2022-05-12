@@ -54,7 +54,7 @@ header {
 .content {
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 150px;
 }
 
 /* ----- Menu Styling ----- */
@@ -79,7 +79,6 @@ header {
 	font-weight: normal;
 	color: #fff;
 }
-
 .ui-menu-item .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     border: 1px solid rgb(171, 117, 23) !important;
 }
@@ -87,15 +86,15 @@ header {
 /* ---- Styling for the Academic Programs content ---- */
 h1{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
     border-bottom: 5px dotted #014421ff;
     border-width: 6px;
     padding-bottom: 10px;
     width: 50%;
     margin-left: 25%;
     color: #7b1113ff;
-}
-.first-accordion{
-    margin-top: 10%;
 }
 .ui-accordion{
     width: 50%;
@@ -168,4 +167,7 @@ h1{
 .ui-menu .ui-menu-item-wrapper {
     position: relative;
     padding: 3px 1em 3px .4em;
+}
+.container-fluid{
+    padding: 0;
 }
