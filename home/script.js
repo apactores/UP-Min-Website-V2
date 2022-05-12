@@ -16,7 +16,6 @@ $(function(){   //loads jQuery when the webpage has finished loading
 
     //shows or hides the tabbed information when the home element is clicked
     $('#home-page').click(function(){
-        $('#home-tabs').tabs();
         $('#home-tabs').toggle();    
     });
 });
