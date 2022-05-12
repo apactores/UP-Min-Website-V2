@@ -11,4 +11,12 @@ $(function(){   //loads jQuery when the webpage has finished loading
         icons: { button: "ui-icon-blank" }
     });
 
+    //jQuery Tab Panels
+    $('#home-tabs').hide();  //hides tabbed information by default
+
+    //shows or hides the tabbed information when the home element is clicked
+    $('#home-page').click(function(){
+        $('#home-tabs').tabs();
+        $('#home-tabs').toggle();    
+    });
 });

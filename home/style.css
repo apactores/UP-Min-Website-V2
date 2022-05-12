@@ -12,6 +12,10 @@ img {
 
 /*----- Content -----*/
 
+#text-black {
+    color: black;
+}
+
 .bottom-material {
     position: fixed;
     bottom: 0;
@@ -30,27 +34,28 @@ img {
 .up-logo {
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 2vh 2vw;
     padding: 5px;
+}
+
+.up-logo p{
+    margin: 0 2vw;
+    padding: 5px;
+    font: 500 18px "Poppins", arial, sans-serif;
+    color: #014421ff;
+    text-decoration: none;
 }
 
 .header-slogan p {
     font: 700 18px "Poppins", arial, sans-serif;
-    position: absolute;
-    top: 60px;
-    right: 80px;
+    text-align: right;
+    margin: 6vh 2vw;
+    padding: 5px;
     color: #014421ff;
 }
 
 .up-logo img {
     width: 80px;
-}
-
-.up-logo p, header a {
-    font: 500 18px "Poppins", arial, sans-serif;
-    margin-left: 10px;
-    color: #014421ff;
-    text-decoration: none;
 }
 
 .menu-tab {
@@ -80,6 +85,10 @@ img {
     text-align: justify;
 }
 
+#home-tabs {
+    padding: 2vh 1vw;
+    margin-bottom: 2vh;
+}
 
 #acad-units .ui-widget { /* Selectmenu style */
     border:none;  
@@ -122,3 +131,24 @@ img {
 #contact-us {
     text-align: center;
 }
+
+@media only screen and (max-width: 800px) {
+    .header-slogan p {
+        text-align: center;
+    }
+    
+    .up-logo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .side-menu {
+        display: flex;
+        margin-left: 3vw;
+        width: 20%;
+        margin-bottom: 0;   
+    }
+  }
