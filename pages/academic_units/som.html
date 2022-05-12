@@ -18,40 +18,52 @@
 <div class="container-fluid">
     <div class="top-material"></div>
 
-    <!-- Header for the UP Mindanao Website -->
-    <div class="content">
-        <header>
-            <a href="../../home/index.html" class="up-logo-anchor">
-                <div class="up-logo">
-                    <img src="../../photos/up-logo.png" alt="UP-logo">
-                    <p>University of the <br> Philippines Mindanao</p>
+        <!-- Header for the UP Mindanao Website -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="up-logo">
+                        <img src="../../photos/up-logo.png" alt="UP-logo">
+                        <p>University of the <br> Philippines Mindanao</p>
+                    </div>
                 </div>
-            </a>
-            <div class="header-slogan">
-                <p>SHAPING MINDS THAT SHAPE THE NATION</p>
+                <div class="col-md-6">
+                    <div class="header-slogan">
+                        <p>SHAPING MINDS THAT SHAPE THE NATION</p>
+                    </div>
+                </div>
             </div>
             <div class="border-bottom"></div>
-        </header>
+        </div>
 
         <!-- UP Mindanao Website Menu -->
-        <div class="menu-tab">
-            <div class="menu-container">
-                <ul id="menu" class="menu">
-                    <a href="../../home/index.html"><li><div class="home-option">HOME</div></li></a>
-                    <li><div id="acad-units">
-                        <select name="acad-units-dropdown" id="acad-units-dropdown">
-                            <option value=" " selected="selected" disabled>ACADEMIC UNIT</option>
-                            <option value="chss.html">College of Humanities and Social Science</option>
-                            <option value="csm.html">College of Science and Mathematics</option>
-                            <option value="som.html">School of Management</option>
-                        </select></div>
-                    </li>
-                    <a href="../academic_programs/academicprograms.html"><li><div>ACADEMIC PROGRAMS</div></li></a>
-                    <a href="../signup/signup.html"><li><div>SIGN UP</div></li></a>
-                </ul>
+        <div class="container-sm menu float-start w-25">
+            <div class="row">
+                <div class="col-2 ms-3 side-menu">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                        <a class="nav-link active" id="home-page" aria-current="page" href="../../home/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ACADEMIC UNITS</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../pages/academic_units/chss.html">College of Humanities and Social Science</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../pages/academic_units/csm.html">College of Science and Mathematics</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../pages/academic_units/som.html">School of Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../../pages/academic_programs/academicprograms.html">ACADEMIC PROGRAMS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../../pages/signup/signup.html">SIGN UP</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>   
+        </div>   
         
         <!-- Contains the School of Management Information -->
             <h1>School of Management</h1>
@@ -76,6 +88,7 @@
 </div>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script type="text/javascript" src="../../libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../libraries/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="../../libraries/jqueryui/jquery-ui.min.js"></script>
